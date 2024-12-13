@@ -1,0 +1,128 @@
+/* General Reset */
+body {
+  margin: 50px 50px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height for better centering */
+}
+
+/* App Container */
+.App {
+  background-color: #ffffff;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.15); /* Larger shadow for more depth */
+  border-radius: 12px; /* Increased border radius for a softer, modern look */
+  width: 200%;
+  max-width: 600px; /* Larger max-width for more content space */
+  padding: 60px 40px; /* Increased padding for better spacing */
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.todo {
+   
+}
+/* Heading */
+.App h1 {
+  font-size: 2.8rem; /* Larger font size */
+  color: #194e80;
+  margin-bottom: 30px; /* More space between heading and content */
+  font-weight: 700; /* Heavier font weight for more emphasis */
+}
+
+/* List Style */
+ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem; /* Larger font for better readability */
+}
+
+/* List Items */
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 20px 25px; /* Increased padding for more space */
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Larger shadow for more depth */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e8f5e9; /* Light green background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Checkbox Styling */
+ul li input[type="checkbox"] {
+  accent-color: #4caf50;
+  width: 40px; /* Larger checkbox */
+  height: 40px;
+  margin-right: 25px;
+  transition: transform 0.2s ease;
+}
+
+ul li input[type="checkbox"]:checked {
+  transform: scale(1.3); /* Slightly larger when checked */
+}
+
+/* Label Styling */
+ul li label {
+  flex: 1;
+  font-size: 1.3rem; /* Larger text for better readability */
+  text-align: left;
+  color: #555;
+  font-weight: 600; /* Slightly bolder font for emphasis */
+}
+
+/* Button Styling */
+ul li button {
+  background-color: #ff5252;
+  border: none;
+  color: white;
+  border-radius: 10px; /* Larger rounded corners */
+  padding: 10px 20px; /* Larger padding for a more clickable size */
+  cursor: pointer;
+  font-size: 1.1rem; /* Increased font size for the button */
+  transition: background-color 0.3s, transform 0.2s;
+  outline: none;
+}
+
+ul li button:hover {
+  background-color: #ff1744; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+ul li button:focus {
+  box-shadow: 0 0 5px #ff5252;
+}
+
+/* Input field */
+input[type=text], select {
+  width: 70%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#add, #search{
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#add,#search:hover {
+  background-color: #45a049;
+}
